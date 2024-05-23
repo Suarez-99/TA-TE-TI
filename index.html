@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tateti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="botonModo" onclick="cambiarModo()">Modo Oscuro</button>
+    <h1>Tateti</h1>
+    <div id="indicadorTurno">Turno de: <span id="turnoActual">X</span></div>
+    <div id="contenedorGrilla">
+        <div class="cuadrado" id="cuadrado1"></div>
+        <div class="cuadrado" id="cuadrado2"></div>
+        <div class="cuadrado" id="cuadrado3"></div>
+        <div class="cuadrado" id="cuadrado4"></div>
+        <div class="cuadrado" id="cuadrado5"></div>
+        <div class="cuadrado" id="cuadrado6"></div>
+        <div class="cuadrado" id="cuadrado7"></div>
+        <div class="cuadrado" id="cuadrado8"></div>
+        <div class="cuadrado" id="cuadrado9"></div>
+    </div>
+    <button id="botonReinicio">Reiniciar Juego</button>
+    <dialog id="dialogoGanador">
+        <h2 id="mensajeGanador">¡Jugador <span id="ganador"></span> gana!</h2>
+        <button onclick="reiniciarJuego()">Jugar de nuevo</button>
+    </dialog>
+    <script src="index.js"></script>
+</body>
+</html>
+
